@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    padding: 2% 3%;
+    background-color: #F2CD5C;
+    color: #20262E;
+    font-family: 'Roboto Slab', serif;
+}
+h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+p{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/* PLayer IMages */
+img{
+    border-radius: 20%;
+}
+.player-1-hand{
+    transform: rotate(90deg);
+}
+.player-2-hand{
+    transform: rotate(-90deg);
+}
+
+/* score */
+.score{
+    font-size: 10rem;
+    margin-top: 20px;
+}
+
+.rotate{
+    transform: rotate(10deg);
+}
+.display-score-winner{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+@media only screen and (max-width:700px){
+    img{
+        height: 120px;
+        width: 120px;
+    }
+    .player-1-hand{
+        transform: rotate(180deg);
+    }
+    .player-2-hand{
+        transform: rotate(0deg);
+    }
+    .score{
+        margin-top: 0;
+        transform: rotate(90deg);
+        font-size: 6rem;
+     
+        
+    }
+}
+
+@media screen and (max-width:1135px) and (min-width:700px) {
+    .main-container{
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 10%;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    .score{
+        font-size: 5rem;
+        margin-top: 10%;
+    }
+   .player-2-hand{
+    margin-left: 2px;
+   }
+   
+}
